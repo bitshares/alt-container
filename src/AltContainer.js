@@ -136,8 +136,6 @@ class AltContainer extends React.Component {
       throw new ReferenceError('Cannot define both store and stores')
     }
 
-    this.storeListeners = []
-
     this.state = reduceState(props)
   }
 
@@ -179,7 +177,8 @@ class AltContainer extends React.Component {
   }
 
   _destroySubscriptions() {
-    this.storeListeners.forEach(storeListener => storeListener())
+      const stores = this.props.stores
+      stores && stores.forEach(store => store.unlisten(this.altSetState))
   }
 
   _addSubscription(getStore) {
@@ -187,7 +186,7 @@ class AltContainer extends React.Component {
       ? getStore(this.props).store
       : getStore
 
-    this.storeListeners.push(store.listen(this.altSetState))
+    store.listen(this.altSetState)
   }
 
   altSetState = () => {
