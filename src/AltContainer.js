@@ -139,7 +139,7 @@ class AltContainer extends React.Component {
     this.state = reduceState(props)
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     this._destroySubscriptions()
     this.setState(reduceState(nextProps))
     this._registerStores(nextProps)

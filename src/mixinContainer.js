@@ -46,7 +46,7 @@ const mixinContainer = (React) => {
       return this.reduceState(this.props)
     },
 
-    componentWillReceiveProps(nextProps) {
+    UNSAFE_componentWillReceiveProps(nextProps) {
       this.destroySubscriptions()
       this.setState(this.reduceState(nextProps))
       this.registerStores(nextProps)
