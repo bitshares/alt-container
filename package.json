@@ -44,7 +44,7 @@
     "@babel/preset-env": "^7.16.5",
     "@babel/preset-react": "^7.16.5",
     "alt": "git+https://github.com/bitshares/alt.git",
-    "alt-utils": "^2.0.0",
+    "alt-utils": "https://github.com/bitshares/utils.git",
     "chai": "^4.3.4",
     "create-react-class": "^15.7.0",
     "ghooks": "^2.0.4",

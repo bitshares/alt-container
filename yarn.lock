@@ -1113,6 +1113,12 @@ alt-utils@^2.0.0:
   dependencies:
     prop-types "^15.5.10"
 
+"alt-utils@https://github.com/bitshares/utils.git":
+  version "2.0.0"
+  resolved "https://github.com/bitshares/utils.git#114cf76d5f527edafdf45276439ed4e0b47edc23"
+  dependencies:
+    prop-types "^15.8.0"
+
 "alt@git+https://github.com/bitshares/alt.git":
   version "0.18.6"
   resolved "git+https://github.com/bitshares/alt.git#0c499b8cc010faf599cacff478ad615b46755590"
