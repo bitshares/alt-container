@@ -1106,16 +1106,9 @@ agent-base@6:
   dependencies:
     debug "4"
 
-alt-utils@^2.0.0:
+"alt-utils@https://github.com/bitshares/alt-utils.git":
   version "2.0.0"
-  resolved "https://registry.yarnpkg.com/alt-utils/-/alt-utils-2.0.0.tgz#4bbd562d20a9a295ac813a9e32b03539465a40cc"
-  integrity sha1-S71WLSCpopWsgTqeMrA1OUZaQMw=
-  dependencies:
-    prop-types "^15.5.10"
-
-"alt-utils@https://github.com/bitshares/utils.git":
-  version "2.0.0"
-  resolved "https://github.com/bitshares/utils.git#114cf76d5f527edafdf45276439ed4e0b47edc23"
+  resolved "https://github.com/bitshares/alt-utils.git#89f772384a2dfb4010ae8e84e118be69a5cecbef"
   dependencies:
     prop-types "^15.8.0"
 
@@ -2503,7 +2496,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.10, prop-types@^15.8.0:
+prop-types@^15.8.0:
   version "15.8.0"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.0.tgz#d237e624c45a9846e469f5f31117f970017ff588"
   integrity sha512-fDGekdaHh65eI3lMi5OnErU6a8Ighg2KjcjQxO7m8VHyWjcPyj5kiOgV1LQDOOOgVy3+5FgjXvdSSX7B8/5/4g==
